@@ -1,0 +1,493 @@
+/* CSS Document */
+
+/*this is the counter that tells me where the top of the window is*/
+body {
+	background-color: #000;
+}
+h1 {
+	color: #FFF;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Indie Flower', cursive;
+	font-size: 42px;
+	padding-top: 20px;
+}
+#counter {
+	position: fixed;
+	top: 0%;
+	left: 26%;
+	background-color: rgba(66,67,65,.90);
+	color: #FF0;
+	width: 75px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	z-index: 1;
+	
+}
+/*this is the main container for the project*/
+#canvas {
+	background: url(images/water_canvas.jpg) center;
+	margin: 0 auto;
+	width: 800px;
+	height: 10000px;
+}
+#frog {
+	background-image: url(images/frog_small_straight.png);
+	position: fixed;
+	bottom: 0%;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	height: 500px;
+	z-index: 0;
+}
+#title {
+	color: #FFF;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Merienda', cursive;
+	font-size: 50px;
+	line-height: 130%;
+	padding-top: 100px;
+}
+#title1 {
+	color: #FFF;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Merienda', cursive;
+	font-size: 18px;
+	line-height: 120%;
+	padding-top: 80px;
+}
+/*jquery plugin for scroll to top bar*/
+#scrollUp {
+    bottom: 0;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: -10px;
+    padding: 10px 5px;
+    font: 14px/20px sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    color: #000;
+    -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #E6E6E6;
+    background-image: -moz-linear-gradient(top, #EBEBEB, #DEDEDE);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EBEBEB), to(#DEDEDE));
+    background-image: -webkit-linear-gradient(top, #EBEBEB, #DEDEDE);
+    background-image: -o-linear-gradient(top, #EBEBEB, #DEDEDE);
+    background-image: linear-gradient(to bottom, #EBEBEB, #DEDEDE);
+    background-repeat: repeat-x;
+    -webkit-transition: margin-bottom 150ms linear;
+    -moz-transition: margin-bottom 150ms linear;
+    -o-transition: margin-bottom 150ms linear;
+    transition: margin-bottom 150ms linear;
+}
+#scrollUp:hover {
+    margin-bottom: 0;
+}
+
+/*ids for boxes that appear when scrolling down the page*/
+#one{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 680px;
+	left: -240px;
+	}
+#two{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 1000px;
+	left: 240px;
+	}
+#three{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 1500px;
+	left: -240px;
+	}
+#four{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 1600px;
+	left: 240px;
+	}
+#five{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 1900px;
+	left: -240px;
+	}
+#six{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 2480px;
+	left: -240px;
+	}
+#seven{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 3000px;
+	left: 240px;
+	}
+#eight{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 3800px;
+	left: 240px;
+	}
+#nine{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 4300px;
+	left: -240px;
+	}
+#ten{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 4700px;
+	left: 240px;
+	}
+#eleven{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 5200px;
+	left: 240px;
+	}
+#twelve{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 5800px;
+	left: -240px;
+	}
+#thirteen{
+	position: relative;
+	text-align: left;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 6300px;
+	left: 240px;
+	}
+#fourteen{
+	position: relative;
+	text-align: center;
+	color: #000;
+	background-color: rgba(255,246,222,.90);
+	visibility: hidden;
+	top: 6760px;
+	left: 0px;
+	}
+/*end of ids*/
+
+.counter_box{
+	background-color: ivory;
+	color: #000;
+	width: 200px;
+	height: 110px;
+	text-align: left;
+	padding: 10px;
+	text-indent: 10px;
+	font-size: 16px;
+	
+}
+
+/*classes for the boxes*/
+.box {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 135px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box1 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 175px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box2 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 135px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box3 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 140px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box4 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 180px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box5 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 160px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box6 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 175px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box7 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 195px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box8 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 160px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box9 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 235px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box10 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 155px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box11 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 135px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box12 {
+	background-color: ivory;
+	color: #000;
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+	text-indent: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 20px;
+}
+.box13 {
+	background-color: ivory;
+	color: #000;
+	width: 560px;
+	height: 50px;
+	padding: 10px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 42px;
+}
+
+/*end of classes*/
+
+/*animations*/
+.shaking {
+    animation-name: shake;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-name: shake;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@keyframes shake {
+  50% {
+    transform: translate(0, 10px);
+  }
+}
+
+@-webkit-keyframes shake {
+  50% {
+    -webkit-transform: translate(0, 10px);
+  }
+}
+
+@-moz-keyframes shake {
+  50% {
+    -moz-transform: translate(0, 10px);
+  }
+}
+.fadeIn {
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+	animation-duration: 1.0s;	
+	-webkit-animation-duration: 1.0s;
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+	visibility: visible !important;
+}
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 3.5s;	
+	-webkit-animation-duration: 3.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+/*end of animations*/

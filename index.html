@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project Two : Long scrolling website</title>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script src="jquery.scrollUp.min.js"></script>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="pro2.css">
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merienda:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<script>
+	/*jquery plugin - scroll to top*/
+	$(function(){
+  	$.scrollUp();
+		});
+</script>
+
+</head>
+<body>
+
+  <div id="canvas">
+	<!-- <h1 id="counter" class="counter_box">Counter</h1> -->
+    
+    <h2 id="title" class="floating">Tips For Catching Big Bass<br />with a<br />Hollow Body Frog</h2>
+    
+    <h3 id="title1" class="floating">Scroll down to move the frog and<br />reveal these amazing tips</h3>
+    
+    <div id="frog" class="shaking"></div>
+  
+    <!-- boxes that appear on the when when scrolling -->
+    <h1 id="one" class="box .fadeIn">A common mistake among many bass anglers is working a frog the same way in every situation. When the fish are really active, try to make the frog sound almost like a buzzbait.</h1> 
+    
+  
+	<h1 id="two" class="box1 .fadeIn">When frog fishing lily pads, an ideal cast that provokes many aggressive strikes is one that lands about 2 1/2 feet into the lily pads. Then walk the frog a couple of times until you reach the open water edge. Make sure you pop the frog just a little and wait.</h1>
+	  
+	<h1 id="three" class="box2 .fadeIn">Cast the frog onto the bank and pull it into the water about 6 inches off the bank. Let it sit for about 10 seconds before the retrieve. Sometimes a still bait is an easy meal for a bass.</h1>
+	    
+	<h1 id="four" class="box3 .fadeIn">On some frogs, the skirt that makes up the legs runs in one side of the frog and out the other. If you pull on one leg and make it a little longer than the other, the bait will have some walk-the-dog action on its own.</h1>
+
+	<h1 id="five" class="box4 .fadeIn">Match the hatch. As everyone knows, small frogs hang out right at the water's edge and pop into the water when you approach. Toss your frog up on the bank or shoreline and pop it into the water. Let it sit for no more than two seconds and pop it away from the dirt. </h1>
+
+	<h1 id="six" class="box5 .fadeIn">Popular frog colors are those that match the hatch according to the frogs present near the water being fished. Black and white are most common frog colors, while brown, green, chartreuse, and other natural colors work exceedingly well.</h1>
+
+	<h1 id="seven" class="box6 .fadeIn">To achieve the most realistic retrieve, it is important to understand that you should never move the frog with your reel—only the sharp, downward twitches of the rod should move the bait, with the reel being used solely for retrieving slack line.</h1>
+	  
+	<h1 id="eight" class="box7 .fadeIn">There are many techniques in bass fishing that will allow anglers the chance to “get away” with using subpar equipment, but frog fishing is not one of them. With two huge hooks to drive into the mouth of a big bass, a good hookset and proper equipment is essential.</h1>
+ 
+ 	<h1 id="nine" class="box8 .fadeIn">Even if you're not fishing around thick vegetation, braided line is the way to go. 65 pound braided line is ideal for all frog fishing, regardless of cover. Monofilament stretches too much and fluorocarbon will sink and inhibit the frog's action.</h1>
+ 
+ 	<h1 id="ten" class="box9 .fadeIn">To walk your frog point your rod tip down straight at your feet aimed in the direction of the frog. Twitch the rod from 8 o’clock to 6 o’clock with enough slack in the braid to form a belly. If the line is tight when you twitch, the lure will move in a straight line. When there is slack in the line the frog will move from side to side.</h1>
+
+	<h1 id="eleven" class="box10 .fadeIn">When a bass hits the frog, try not to set the hook right away. Let the bass have the frog for a second or two. When you feel the weight of the fish, that is the time to set the hook. The key is to not react when you see the fish break the water.</h1>
+
+	<h1 id="twelve" class="box11 .fadeIn">To increase your hook up ratio, bend your hooks upward from the body of the frog. The frog may not be as weedless, but The hooks will be more exposed when a fish bites down on it.</h1> 
+
+	<h1 id="thirteen" class="box12 .fadeIn">It's absolutely critical to have some slack in the line before you snap your wrist on the hook set. If you try to set on taught line, you will only pull the bait out of the fish's mouth. If you have slack in the line and then set the hook, you will be at maximum velocity in your set when the line tightens up.</h1> 
+
+	<h1 id="fourteen" class="box13 .fadeIn">Happy fishing and good luck!!!</h1>
+	<!-- end of boxes -->  
+  
+  </div>
+   
+  <!-- javascript -->  
+  <script type="text/javascript">
+
+	$(window).scroll(function() {
+	  
+	/*vertical Counter*/
+	$("#counter").text("px:" +$(window).scrollTop());
+	  
+	/*triggers the boxes to appear from hidden to visible*/  
+	$(window).scroll(function() {
+	$('#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirteen,#fourteen').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+700) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+  
+  /*jquery plugin for scroll to top*/ 
+  $(window).scroll(function(){
+    $("#title,#title1").css("opacity", 1 - $(window).scrollTop() / 250);
+  		});
+});	
+</script>
+
+</body>
+</html>
